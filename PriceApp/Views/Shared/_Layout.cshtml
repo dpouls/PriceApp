@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <!--Link to bootstrap css file-->
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <!--Link to fontawesome css file-->
+    <link rel="stylesheet" href="~/lib/font-awesome/css/all.min.css" />
+    <!--Link to then normal site.css stylesheet.-->
+    <link href="~/css/site.css" rel="stylesheet" />
+</head>
+<!--container class gives us space and helps center things-->
+<body class="container">
+    <!--jumbotron makes a big header, success is green-->
+    <header class="jumbotron text-center text-white bg-success">
+        <!--fas is font awesome fa-money-bill-alt is the icon we want to display. pr-2 is padding-right: 2 -->
+        <h1><span class="fas fa-money-bill-alt pr-2"></span>Price Quotation</h1>
+    </header>
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>
